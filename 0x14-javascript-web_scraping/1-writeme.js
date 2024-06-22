@@ -9,9 +9,7 @@ const string = process.argv[3];
 
 // checking if file exits
 fs.writeFile(file, string, 'utf-8', (err) => {
-	if (err) {
-		console.error(err);
-		return;
-	}
-
+  if (err) {
+    console.error(err);
+  }
 });
